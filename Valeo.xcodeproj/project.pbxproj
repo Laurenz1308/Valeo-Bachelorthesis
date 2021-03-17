@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A04E27225F4D458007036D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A04E27125F4D458007036D1 /* LaunchScreen.storyboard */; };
+		8A05BB0025E85CAD00464D3D /* LoginTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05BAFF25E85CAD00464D3D /* LoginTabView.swift */; };
+		8A05BB0325E85CF700464D3D /* SignupTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05BB0225E85CF700464D3D /* SignupTabView.swift */; };
+		8A05BB0625E85D9100464D3D /* LoginAndSignupTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05BB0525E85D9100464D3D /* LoginAndSignupTabBar.swift */; };
+		8A05BB0925E85DB700464D3D /* AuthenticationCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05BB0825E85DB700464D3D /* AuthenticationCurve.swift */; };
+		8A05BB0D25E8ECE100464D3D /* ColorTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05BB0C25E8ECE100464D3D /* ColorTestView.swift */; };
+		8A05BB1025E923EC00464D3D /* MealCategoryMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A05BB0F25E923EC00464D3D /* MealCategoryMenuBar.swift */; };
+		8A11121D25F2AA9400C113F9 /* FirebaseSDKLicense.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8A11121C25F2AA9400C113F9 /* FirebaseSDKLicense.rtf */; };
+		8A11122125F2AEE900C113F9 /* AlgoliaSDKLicense.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8A11122025F2AEE900C113F9 /* AlgoliaSDKLicense.rtf */; };
+		8A1560EE25C1CFC7005B37B3 /* Consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1560ED25C1CFC7005B37B3 /* Consumption.swift */; };
+		8A1D1C0725B0664200FBD9FF /* OnBoardingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D1C0625B0664200FBD9FF /* OnBoardingNavigator.swift */; };
+		8A1D1C0A25B06C9A00FBD9FF /* BoardingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D1C0925B06C9A00FBD9FF /* BoardingName.swift */; };
+		8A1D1C0D25B06CC200FBD9FF /* BoardingBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D1C0C25B06CC200FBD9FF /* BoardingBirthday.swift */; };
+		8A1D1C1025B06CE300FBD9FF /* BoardingGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D1C0F25B06CE300FBD9FF /* BoardingGender.swift */; };
+		8A1D1C1325B06CF800FBD9FF /* BoardingWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D1C1225B06CF800FBD9FF /* BoardingWeight.swift */; };
+		8A1D1C1625B06D0900FBD9FF /* BoardingSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D1C1525B06D0900FBD9FF /* BoardingSize.swift */; };
+		8A1F2BCE25D2F06C0057275D /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F2BCD25D2F06C0057275D /* LineChart.swift */; };
+		8A1F2BD625D44EA70057275D /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F2BD525D44EA70057275D /* UserView.swift */; };
+		8A1F2BDC25D53F780057275D /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F2BDB25D53F780057275D /* UserRepository.swift */; };
+		8A29791D25D5534A001B3AD5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29791C25D5534A001B3AD5 /* UserViewModel.swift */; };
+		8A29792425D68FC1001B3AD5 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29792325D68FC1001B3AD5 /* AuthenticationRepository.swift */; };
+		8A29792725D69703001B3AD5 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29792625D69703001B3AD5 /* AuthenticationViewModel.swift */; };
+		8A29792B25D6BAB5001B3AD5 /* AnamnesisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29792A25D6BAB5001B3AD5 /* AnamnesisViewModel.swift */; };
+		8A29792E25D6BAE5001B3AD5 /* AnamnesisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29792D25D6BAE5001B3AD5 /* AnamnesisRepository.swift */; };
+		8A29793125D82A1D001B3AD5 /* DaysummaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29793025D82A1D001B3AD5 /* DaysummaryRepository.swift */; };
+		8A2BB3C025B2F6DE00AB1863 /* UserMutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2BB3BF25B2F6DE00AB1863 /* UserMutable.swift */; };
+		8A39F59B25C0809C00350141 /* HitsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39F59A25C0809C00350141 /* HitsListController.swift */; };
+		8A39F59F25C087EB00350141 /* MealType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39F59E25C087EB00350141 /* MealType.swift */; };
+		8A3DD73F25EE7F7E00E0BE88 /* IntroductionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DD73E25EE7F7D00E0BE88 /* IntroductionViewManager.swift */; };
+		8A3DD74225EEA5AB00E0BE88 /* IntroductionSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DD74125EEA5AB00E0BE88 /* IntroductionSubView.swift */; };
+		8A3DD74525EFCA3900E0BE88 /* fullNutrientList.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DD74425EFCA3900E0BE88 /* fullNutrientList.json */; };
+		8A3DD7A125F00B5800E0BE88 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DD7A025F00B5800E0BE88 /* QuestionView.swift */; };
+		8A3DD7A525F0136600E0BE88 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DD7A425F0136600E0BE88 /* GoogleService-Info.plist */; };
+		8A4B8D8125F6456C00943D6E /* SurveyLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B8D8025F6456C00943D6E /* SurveyLink.swift */; };
+		8A58E0B625DACE03003543BE /* ConsumptionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A58E0B525DACE03003543BE /* ConsumptionRepository.swift */; };
+		8A67184825CBF08200DA5CAA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A67184725CBF08200DA5CAA /* Question.swift */; };
+		8A67185425CC072200DA5CAA /* MainAnamnesisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A67185325CC072200DA5CAA /* MainAnamnesisView.swift */; };
+		8A6C0A3425D00AC90079804A /* AnsweredQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C0A3325D00AC90079804A /* AnsweredQuestion.swift */; };
+		8A70136D25AB034E008C9A8E /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70136C25AB034E008C9A8E /* PersonalData.swift */; };
+		8A70137025AB0359008C9A8E /* DiarySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70136F25AB0359008C9A8E /* DiarySettings.swift */; };
+		8A70137325AB036E008C9A8E /* AccountSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70137225AB036E008C9A8E /* AccountSettings.swift */; };
+		8A70137625AB0380008C9A8E /* NotificationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70137525AB0380008C9A8E /* NotificationSettings.swift */; };
+		8A70137925AB0390008C9A8E /* TrackingSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70137825AB0390008C9A8E /* TrackingSettings.swift */; };
+		8A70137C25AB03A7008C9A8E /* AGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70137B25AB03A7008C9A8E /* AGB.swift */; };
+		8A70137F25AB03B5008C9A8E /* Licences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70137E25AB03B5008C9A8E /* Licences.swift */; };
+		8A70138225AB03C1008C9A8E /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70138125AB03C1008C9A8E /* Sources.swift */; };
+		8A70138525AB03CD008C9A8E /* InviteFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70138425AB03CD008C9A8E /* InviteFriends.swift */; };
+		8A763B4E25B1B57E00F2B2C3 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A763B4D25B1B57E00F2B2C3 /* Gender.swift */; };
+		8A87B0DD25B8221500FF4B0E /* LoginAndSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87B0DC25B8221500FF4B0E /* LoginAndSignupView.swift */; };
+		8A87B0E225BB245100FF4B0E /* NutrientBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87B0E125BB245100FF4B0E /* NutrientBase.swift */; };
+		8A87B0E625BB2DDD00FF4B0E /* NutrientUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A87B0E525BB2DDD00FF4B0E /* NutrientUploader.swift */; };
+		8A8BC4082566AF0A00BABDD8 /* ValeoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BC4072566AF0A00BABDD8 /* ValeoApp.swift */; };
+		8A8BC40A2566AF0A00BABDD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BC4092566AF0A00BABDD8 /* ContentView.swift */; };
+		8A8BC40C2566AF0D00BABDD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BC40B2566AF0D00BABDD8 /* Assets.xcassets */; };
+		8A8BC40F2566AF0D00BABDD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BC40E2566AF0D00BABDD8 /* Preview Assets.xcassets */; };
+		8A8E587F25D540FF00CDE6F0 /* FirestoreCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8E587E25D540FF00CDE6F0 /* FirestoreCollections.swift */; };
+		8A98093C25DF111E00C2C40E /* ValeoMLModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A98093B25DF111E00C2C40E /* ValeoMLModel.mlmodel */; };
+		8A9D6E6825B06EA70022B18F /* BoardingWaistAndBodyfat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9D6E6725B06EA70022B18F /* BoardingWaistAndBodyfat.swift */; };
+		8AB00D2E25AB67ED0064138C /* NumberStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB00D2D25AB67ED0064138C /* NumberStepper.swift */; };
+		8AB00D3125AB681E0064138C /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB00D3025AB681E0064138C /* CustomStepper.swift */; };
+		8AB00D3425AB68940064138C /* SaveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB00D3325AB68940064138C /* SaveText.swift */; };
+		8AB7768725DAA6CF00DA6F34 /* DaysummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB7768625DAA6CF00DA6F34 /* DaysummaryViewModel.swift */; };
+		8AB7768A25DAA6DD00DA6F34 /* ConsumptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB7768925DAA6DD00DA6F34 /* ConsumptionViewModel.swift */; };
+		8ABCF89A25F3D1EA006544FC /* PrivacyPolicyGerman.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8ABCF89925F3D1EA006544FC /* PrivacyPolicyGerman.rtf */; };
+		8ABCF8FE25F3E917006544FC /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABCF8FD25F3E917006544FC /* APIKeys.swift */; };
+		8ABCF90225F3EDAB006544FC /* AcceptPrivacyPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABCF90125F3EDAB006544FC /* AcceptPrivacyPolicy.swift */; };
+		8ACB5B9025C1DB3B00C61450 /* NutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB5B8F25C1DB3B00C61450 /* NutrientView.swift */; };
+		8ACB5B9325C31AE400C61450 /* DaySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB5B9225C31AE400C61450 /* DaySummary.swift */; };
+		8AE1A57225AC695C005281A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE1A57125AC695C005281A3 /* User.swift */; };
+		8AFAF17425AA1523006E7A27 /* MainSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAF17325AA1523006E7A27 /* MainSettingsView.swift */; };
+		8AFAF17925AA15B8006E7A27 /* MainSearchbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAF17825AA15B8006E7A27 /* MainSearchbarView.swift */; };
+		8AFAF17D25AA184F006E7A27 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFAF17C25AA184F006E7A27 /* Settings.swift */; };
+		8AFB73A825F935AE000E7BE7 /* NumbersOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFB73A725F935AE000E7BE7 /* NumbersOnly.swift */; };
+		8AFB73AB25F93C01000E7BE7 /* DateSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFB73AA25F93C01000E7BE7 /* DateSelector.swift */; };
+		B2587D3C25824E6200DDC82D /* MainTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D3B25824E6200DDC82D /* MainTracker.swift */; };
+		B2587D452582567300DDC82D /* Anamnesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D442582567300DDC82D /* Anamnesis.swift */; };
+		B2587D4E2583E0C900DDC82D /* RingProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D4D2583E0C900DDC82D /* RingProgress.swift */; };
+		B2587D512584E02200DDC82D /* BigIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D502584E02200DDC82D /* BigIndicator.swift */; };
+		B2587D542584EB9500DDC82D /* DailyNutrientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D532584EB9500DDC82D /* DailyNutrientRow.swift */; };
+		B2587D5725850A3E00DDC82D /* MealSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D5625850A3E00DDC82D /* MealSummary.swift */; };
+		B2587D782586662E00DDC82D /* NutrientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D772586662E00DDC82D /* NutrientCell.swift */; };
+		B2587D7B2586878000DDC82D /* TrackerNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D7A2586878000DDC82D /* TrackerNavigation.swift */; };
+		B2587D7F25868A6B00DDC82D /* MainUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2587D7E25868A6B00DDC82D /* MainUser.swift */; };
+		B2890118256C0768009400F4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2890117256C0768009400F4 /* Food.swift */; };
+		B2E108002587D6900075AEF9 /* OffsetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E107FF2587D6900075AEF9 /* OffsetManager.swift */; };
+		B2E10804258B7E6E0075AEF9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E10803258B7E6E0075AEF9 /* HealthKit.framework */; };
+		B2E10807258BBC480075AEF9 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E10806258BBC480075AEF9 /* Activity.swift */; };
+		B2FDD94C258CF0760090969F /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FDD94B258CF0760090969F /* Navigator.swift */; };
+		B2FDD94F258CF5E60090969F /* MainNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FDD94E258CF5E60090969F /* MainNavigationView.swift */; };
+		B795006E7226C44C1BFFDF44 /* Pods_Valeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A8B9539BDB9EE0AF128EF1 /* Pods_Valeo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28A8B9539BDB9EE0AF128EF1 /* Pods_Valeo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valeo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A04E27125F4D458007036D1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A05BAFF25E85CAD00464D3D /* LoginTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTabView.swift; sourceTree = "<group>"; };
+		8A05BB0225E85CF700464D3D /* SignupTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTabView.swift; sourceTree = "<group>"; };
+		8A05BB0525E85D9100464D3D /* LoginAndSignupTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignupTabBar.swift; sourceTree = "<group>"; };
+		8A05BB0825E85DB700464D3D /* AuthenticationCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCurve.swift; sourceTree = "<group>"; };
+		8A05BB0C25E8ECE100464D3D /* ColorTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestView.swift; sourceTree = "<group>"; };
+		8A05BB0F25E923EC00464D3D /* MealCategoryMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCategoryMenuBar.swift; sourceTree = "<group>"; };
+		8A11121C25F2AA9400C113F9 /* FirebaseSDKLicense.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = FirebaseSDKLicense.rtf; sourceTree = "<group>"; };
+		8A11122025F2AEE900C113F9 /* AlgoliaSDKLicense.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = AlgoliaSDKLicense.rtf; sourceTree = "<group>"; };
+		8A1560ED25C1CFC7005B37B3 /* Consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumption.swift; sourceTree = "<group>"; };
+		8A1D1C0625B0664200FBD9FF /* OnBoardingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnBoardingNavigator.swift; path = Valeo/UI/Onboarding/OnBoardingNavigator.swift; sourceTree = SOURCE_ROOT; };
+		8A1D1C0925B06C9A00FBD9FF /* BoardingName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardingName.swift; path = Valeo/UI/Onboarding/BoardingName.swift; sourceTree = SOURCE_ROOT; };
+		8A1D1C0C25B06CC200FBD9FF /* BoardingBirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardingBirthday.swift; path = Valeo/UI/Onboarding/BoardingBirthday.swift; sourceTree = SOURCE_ROOT; };
+		8A1D1C0F25B06CE300FBD9FF /* BoardingGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardingGender.swift; path = Valeo/UI/Onboarding/BoardingGender.swift; sourceTree = SOURCE_ROOT; };
+		8A1D1C1225B06CF800FBD9FF /* BoardingWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardingWeight.swift; path = Valeo/UI/Onboarding/BoardingWeight.swift; sourceTree = SOURCE_ROOT; };
+		8A1D1C1525B06D0900FBD9FF /* BoardingSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardingSize.swift; path = Valeo/UI/Onboarding/BoardingSize.swift; sourceTree = SOURCE_ROOT; };
+		8A1F2BCD25D2F06C0057275D /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		8A1F2BD525D44EA70057275D /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		8A1F2BDB25D53F780057275D /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8A29791C25D5534A001B3AD5 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8A29792325D68FC1001B3AD5 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		8A29792625D69703001B3AD5 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		8A29792A25D6BAB5001B3AD5 /* AnamnesisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnamnesisViewModel.swift; sourceTree = "<group>"; };
+		8A29792D25D6BAE5001B3AD5 /* AnamnesisRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnamnesisRepository.swift; sourceTree = "<group>"; };
+		8A29793025D82A1D001B3AD5 /* DaysummaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysummaryRepository.swift; sourceTree = "<group>"; };
+		8A2BB3BF25B2F6DE00AB1863 /* UserMutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMutable.swift; sourceTree = "<group>"; };
+		8A39F59A25C0809C00350141 /* HitsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitsListController.swift; sourceTree = "<group>"; };
+		8A39F59E25C087EB00350141 /* MealType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealType.swift; sourceTree = "<group>"; };
+		8A3DD73E25EE7F7D00E0BE88 /* IntroductionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewManager.swift; sourceTree = "<group>"; };
+		8A3DD74125EEA5AB00E0BE88 /* IntroductionSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionSubView.swift; sourceTree = "<group>"; };
+		8A3DD74425EFCA3900E0BE88 /* fullNutrientList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fullNutrientList.json; sourceTree = "<group>"; };
+		8A3DD7A025F00B5800E0BE88 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		8A3DD7A425F0136600E0BE88 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A4B8D8025F6456C00943D6E /* SurveyLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyLink.swift; sourceTree = "<group>"; };
+		8A58E0B525DACE03003543BE /* ConsumptionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionRepository.swift; sourceTree = "<group>"; };
+		8A67184725CBF08200DA5CAA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8A67185325CC072200DA5CAA /* MainAnamnesisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAnamnesisView.swift; sourceTree = "<group>"; };
+		8A6C0A3325D00AC90079804A /* AnsweredQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsweredQuestion.swift; sourceTree = "<group>"; };
+		8A70136C25AB034E008C9A8E /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
+		8A70136F25AB0359008C9A8E /* DiarySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarySettings.swift; sourceTree = "<group>"; };
+		8A70137225AB036E008C9A8E /* AccountSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettings.swift; sourceTree = "<group>"; };
+		8A70137525AB0380008C9A8E /* NotificationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettings.swift; sourceTree = "<group>"; };
+		8A70137825AB0390008C9A8E /* TrackingSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingSettings.swift; sourceTree = "<group>"; };
+		8A70137B25AB03A7008C9A8E /* AGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGB.swift; sourceTree = "<group>"; };
+		8A70137E25AB03B5008C9A8E /* Licences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Licences.swift; sourceTree = "<group>"; };
+		8A70138125AB03C1008C9A8E /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
+		8A70138425AB03CD008C9A8E /* InviteFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriends.swift; sourceTree = "<group>"; };
+		8A763B4D25B1B57E00F2B2C3 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		8A87B0DC25B8221500FF4B0E /* LoginAndSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignupView.swift; sourceTree = "<group>"; };
+		8A87B0E125BB245100FF4B0E /* NutrientBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientBase.swift; sourceTree = "<group>"; };
+		8A87B0E525BB2DDD00FF4B0E /* NutrientUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientUploader.swift; sourceTree = "<group>"; };
+		8A8BC4042566AF0A00BABDD8 /* Valeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8BC4072566AF0A00BABDD8 /* ValeoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValeoApp.swift; sourceTree = "<group>"; };
+		8A8BC4092566AF0A00BABDD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8A8BC40B2566AF0D00BABDD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A8BC40E2566AF0D00BABDD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A8BC4152566AF0D00BABDD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A8E587E25D540FF00CDE6F0 /* FirestoreCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreCollections.swift; sourceTree = "<group>"; };
+		8A98093B25DF111E00C2C40E /* ValeoMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ValeoMLModel.mlmodel; sourceTree = "<group>"; };
+		8A9D6E6725B06EA70022B18F /* BoardingWaistAndBodyfat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingWaistAndBodyfat.swift; sourceTree = "<group>"; };
+		8AB00D2D25AB67ED0064138C /* NumberStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberStepper.swift; sourceTree = "<group>"; };
+		8AB00D3025AB681E0064138C /* CustomStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		8AB00D3325AB68940064138C /* SaveText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveText.swift; sourceTree = "<group>"; };
+		8AB7768625DAA6CF00DA6F34 /* DaysummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysummaryViewModel.swift; sourceTree = "<group>"; };
+		8AB7768925DAA6DD00DA6F34 /* ConsumptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionViewModel.swift; sourceTree = "<group>"; };
+		8ABCF89925F3D1EA006544FC /* PrivacyPolicyGerman.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = PrivacyPolicyGerman.rtf; sourceTree = "<group>"; };
+		8ABCF8FD25F3E917006544FC /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		8ABCF90125F3EDAB006544FC /* AcceptPrivacyPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptPrivacyPolicy.swift; sourceTree = "<group>"; };
+		8ACB5B8F25C1DB3B00C61450 /* NutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientView.swift; sourceTree = "<group>"; };
+		8ACB5B9225C31AE400C61450 /* DaySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySummary.swift; sourceTree = "<group>"; };
+		8AE1A57125AC695C005281A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8AFAF17325AA1523006E7A27 /* MainSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsView.swift; sourceTree = "<group>"; };
+		8AFAF17825AA15B8006E7A27 /* MainSearchbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchbarView.swift; sourceTree = "<group>"; };
+		8AFAF17C25AA184F006E7A27 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		8AFB73A725F935AE000E7BE7 /* NumbersOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOnly.swift; sourceTree = "<group>"; };
+		8AFB73AA25F93C01000E7BE7 /* DateSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelector.swift; sourceTree = "<group>"; };
+		9165B7E19EBF374D31980679 /* Pods-Valeo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valeo.debug.xcconfig"; path = "Target Support Files/Pods-Valeo/Pods-Valeo.debug.xcconfig"; sourceTree = "<group>"; };
+		A592ADA3A904FFF7440A4110 /* Pods-Valeo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valeo.release.xcconfig"; path = "Target Support Files/Pods-Valeo/Pods-Valeo.release.xcconfig"; sourceTree = "<group>"; };
+		B2587D3B25824E6200DDC82D /* MainTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTracker.swift; sourceTree = "<group>"; };
+		B2587D442582567300DDC82D /* Anamnesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anamnesis.swift; sourceTree = "<group>"; };
+		B2587D4D2583E0C900DDC82D /* RingProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgress.swift; sourceTree = "<group>"; };
+		B2587D502584E02200DDC82D /* BigIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigIndicator.swift; sourceTree = "<group>"; };
+		B2587D532584EB9500DDC82D /* DailyNutrientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNutrientRow.swift; sourceTree = "<group>"; };
+		B2587D5625850A3E00DDC82D /* MealSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSummary.swift; sourceTree = "<group>"; };
+		B2587D772586662E00DDC82D /* NutrientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientCell.swift; sourceTree = "<group>"; };
+		B2587D7A2586878000DDC82D /* TrackerNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerNavigation.swift; sourceTree = "<group>"; };
+		B2587D7E25868A6B00DDC82D /* MainUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUser.swift; sourceTree = "<group>"; };
+		B2890117256C0768009400F4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		B2E107FF2587D6900075AEF9 /* OffsetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetManager.swift; sourceTree = "<group>"; };
+		B2E10802258B7E6E0075AEF9 /* Valeo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Valeo.entitlements; sourceTree = "<group>"; };
+		B2E10803258B7E6E0075AEF9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		B2E10806258BBC480075AEF9 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		B2FDD94B258CF0760090969F /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		B2FDD94E258CF5E60090969F /* MainNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A8BC4012566AF0A00BABDD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E10804258B7E6E0075AEF9 /* HealthKit.framework in Frameworks */,
+				B795006E7226C44C1BFFDF44 /* Pods_Valeo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EBD5615DD457BC56CFE9751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9165B7E19EBF374D31980679 /* Pods-Valeo.debug.xcconfig */,
+				A592ADA3A904FFF7440A4110 /* Pods-Valeo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A1F2BCC25D2F0540057275D /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F2BCD25D2F06C0057275D /* LineChart.swift */,
+				8A05BB0825E85DB700464D3D /* AuthenticationCurve.swift */,
+				8ABCF90125F3EDAB006544FC /* AcceptPrivacyPolicy.swift */,
+				8A4B8D8025F6456C00943D6E /* SurveyLink.swift */,
+				8AFB73AA25F93C01000E7BE7 /* DateSelector.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8A1F2BDA25D53F500057275D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F2BDB25D53F780057275D /* UserRepository.swift */,
+				8A29792325D68FC1001B3AD5 /* AuthenticationRepository.swift */,
+				8A29792D25D6BAE5001B3AD5 /* AnamnesisRepository.swift */,
+				8A29793025D82A1D001B3AD5 /* DaysummaryRepository.swift */,
+				8A58E0B525DACE03003543BE /* ConsumptionRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8A3DD73D25EE7F5E00E0BE88 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DD73E25EE7F7D00E0BE88 /* IntroductionViewManager.swift */,
+				8A3DD74125EEA5AB00E0BE88 /* IntroductionSubView.swift */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		8A67185225CC070300DA5CAA /* Anamnesis */ = {
+			isa = PBXGroup;
+			children = (
+				8A67185325CC072200DA5CAA /* MainAnamnesisView.swift */,
+				8A3DD7A025F00B5800E0BE88 /* QuestionView.swift */,
+			);
+			path = Anamnesis;
+			sourceTree = "<group>";
+		};
+		8A70136B25AB0332008C9A8E /* SettingsLinks */ = {
+			isa = PBXGroup;
+			children = (
+				8AB00D2C25AB67D50064138C /* SubViews */,
+				8A70136C25AB034E008C9A8E /* PersonalData.swift */,
+				8A70136F25AB0359008C9A8E /* DiarySettings.swift */,
+				8A70137225AB036E008C9A8E /* AccountSettings.swift */,
+				8A70137525AB0380008C9A8E /* NotificationSettings.swift */,
+				8A70137825AB0390008C9A8E /* TrackingSettings.swift */,
+				8A70137B25AB03A7008C9A8E /* AGB.swift */,
+				8A70137E25AB03B5008C9A8E /* Licences.swift */,
+				8A70138125AB03C1008C9A8E /* Sources.swift */,
+				8A70138425AB03CD008C9A8E /* InviteFriends.swift */,
+			);
+			path = SettingsLinks;
+			sourceTree = "<group>";
+		};
+		8A87B0D225B6F96B00FF4B0E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8A87B0DC25B8221500FF4B0E /* LoginAndSignupView.swift */,
+				8A05BB0525E85D9100464D3D /* LoginAndSignupTabBar.swift */,
+				8A05BAFF25E85CAD00464D3D /* LoginTabView.swift */,
+				8A05BB0225E85CF700464D3D /* SignupTabView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8A8BC3FB2566AF0900BABDD8 = {
+			isa = PBXGroup;
+			children = (
+				8A8BC4062566AF0A00BABDD8 /* Valeo */,
+				8A8BC4052566AF0A00BABDD8 /* Products */,
+				1EBD5615DD457BC56CFE9751 /* Pods */,
+				E1A3211AA76FCC35FD6CCBB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A8BC4052566AF0A00BABDD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A8BC4042566AF0A00BABDD8 /* Valeo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A8BC4062566AF0A00BABDD8 /* Valeo */ = {
+			isa = PBXGroup;
+			children = (
+				B2E10802258B7E6E0075AEF9 /* Valeo.entitlements */,
+				8A1F2BDA25D53F500057275D /* Repository */,
+				B2890116256C0737009400F4 /* Model */,
+				B2587D6F258625A600DDC82D /* ViewModel */,
+				B289010F256C0125009400F4 /* UI */,
+				B289010D256C0103009400F4 /* Template */,
+				B2890110256C0130009400F4 /* JSON */,
+				8A8BC40D2566AF0D00BABDD8 /* Preview Content */,
+			);
+			path = Valeo;
+			sourceTree = "<group>";
+		};
+		8A8BC40D2566AF0D00BABDD8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A8BC40E2566AF0D00BABDD8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A9D6E6525B06E5B0022B18F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8A1D1C0625B0664200FBD9FF /* OnBoardingNavigator.swift */,
+				8A1D1C0925B06C9A00FBD9FF /* BoardingName.swift */,
+				8A1D1C0C25B06CC200FBD9FF /* BoardingBirthday.swift */,
+				8A1D1C0F25B06CE300FBD9FF /* BoardingGender.swift */,
+				8A1D1C1225B06CF800FBD9FF /* BoardingWeight.swift */,
+				8A1D1C1525B06D0900FBD9FF /* BoardingSize.swift */,
+				8A9D6E6725B06EA70022B18F /* BoardingWaistAndBodyfat.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8AB00D2C25AB67D50064138C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8AB00D3325AB68940064138C /* SaveText.swift */,
+				8AB00D3025AB681E0064138C /* CustomStepper.swift */,
+				8AB00D2D25AB67ED0064138C /* NumberStepper.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8AFAF17225AA150C006E7A27 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8AFAF17325AA1523006E7A27 /* MainSettingsView.swift */,
+				8AFAF17C25AA184F006E7A27 /* Settings.swift */,
+				8A70136B25AB0332008C9A8E /* SettingsLinks */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8AFAF17725AA159C006E7A27 /* Searchbar */ = {
+			isa = PBXGroup;
+			children = (
+				8AFAF17825AA15B8006E7A27 /* MainSearchbarView.swift */,
+				8ACB5B8F25C1DB3B00C61450 /* NutrientView.swift */,
+				8A05BB0C25E8ECE100464D3D /* ColorTestView.swift */,
+			);
+			path = Searchbar;
+			sourceTree = "<group>";
+		};
+		B2587D3725811D8B00DDC82D /* Calorietracking */ = {
+			isa = PBXGroup;
+			children = (
+				B2587D3B25824E6200DDC82D /* MainTracker.swift */,
+				B2587D4D2583E0C900DDC82D /* RingProgress.swift */,
+				B2587D502584E02200DDC82D /* BigIndicator.swift */,
+				B2587D532584EB9500DDC82D /* DailyNutrientRow.swift */,
+				B2587D5625850A3E00DDC82D /* MealSummary.swift */,
+				B2587D772586662E00DDC82D /* NutrientCell.swift */,
+				8A05BB0F25E923EC00464D3D /* MealCategoryMenuBar.swift */,
+			);
+			path = Calorietracking;
+			sourceTree = "<group>";
+		};
+		B2587D48258256D400DDC82D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B2FDD94E258CF5E60090969F /* MainNavigationView.swift */,
+				B2587D7A2586878000DDC82D /* TrackerNavigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B2587D492582577E00DDC82D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B2587D7E25868A6B00DDC82D /* MainUser.swift */,
+				8A1F2BD525D44EA70057275D /* UserView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B2587D6F258625A600DDC82D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2E107FF2587D6900075AEF9 /* OffsetManager.swift */,
+				B2FDD94B258CF0760090969F /* Navigator.swift */,
+				8A87B0E525BB2DDD00FF4B0E /* NutrientUploader.swift */,
+				8A39F59A25C0809C00350141 /* HitsListController.swift */,
+				8A29791C25D5534A001B3AD5 /* UserViewModel.swift */,
+				8A29792625D69703001B3AD5 /* AuthenticationViewModel.swift */,
+				8A29792A25D6BAB5001B3AD5 /* AnamnesisViewModel.swift */,
+				8AB7768625DAA6CF00DA6F34 /* DaysummaryViewModel.swift */,
+				8AB7768925DAA6DD00DA6F34 /* ConsumptionViewModel.swift */,
+				8AFB73A725F935AE000E7BE7 /* NumbersOnly.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B289010D256C0103009400F4 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				8A98093B25DF111E00C2C40E /* ValeoMLModel.mlmodel */,
+				8A8BC4152566AF0D00BABDD8 /* Info.plist */,
+				8A3DD7A425F0136600E0BE88 /* GoogleService-Info.plist */,
+				8A8BC40B2566AF0D00BABDD8 /* Assets.xcassets */,
+				8A11121C25F2AA9400C113F9 /* FirebaseSDKLicense.rtf */,
+				8A11122025F2AEE900C113F9 /* AlgoliaSDKLicense.rtf */,
+				8ABCF89925F3D1EA006544FC /* PrivacyPolicyGerman.rtf */,
+				8ABCF8FD25F3E917006544FC /* APIKeys.swift */,
+				8A04E27125F4D458007036D1 /* LaunchScreen.storyboard */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		B289010F256C0125009400F4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8A8BC4072566AF0A00BABDD8 /* ValeoApp.swift */,
+				8A8BC4092566AF0A00BABDD8 /* ContentView.swift */,
+				B2587D48258256D400DDC82D /* Navigation */,
+				B2587D3725811D8B00DDC82D /* Calorietracking */,
+				B2587D492582577E00DDC82D /* User */,
+				8AFAF17225AA150C006E7A27 /* Settings */,
+				8A87B0D225B6F96B00FF4B0E /* Login */,
+				8A9D6E6525B06E5B0022B18F /* Onboarding */,
+				8A3DD73D25EE7F5E00E0BE88 /* Introduction */,
+				8AFAF17725AA159C006E7A27 /* Searchbar */,
+				8A67185225CC070300DA5CAA /* Anamnesis */,
+				8A1F2BCC25D2F0540057275D /* SubViews */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B2890110256C0130009400F4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8A3DD74425EFCA3900E0BE88 /* fullNutrientList.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		B2890116256C0737009400F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AE1A57125AC695C005281A3 /* User.swift */,
+				8A2BB3BF25B2F6DE00AB1863 /* UserMutable.swift */,
+				8A763B4D25B1B57E00F2B2C3 /* Gender.swift */,
+				8ACB5B9225C31AE400C61450 /* DaySummary.swift */,
+				8A1560ED25C1CFC7005B37B3 /* Consumption.swift */,
+				8A87B0E125BB245100FF4B0E /* NutrientBase.swift */,
+				8A39F59E25C087EB00350141 /* MealType.swift */,
+				B2890117256C0768009400F4 /* Food.swift */,
+				B2E10806258BBC480075AEF9 /* Activity.swift */,
+				B2587D442582567300DDC82D /* Anamnesis.swift */,
+				8A67184725CBF08200DA5CAA /* Question.swift */,
+				8A6C0A3325D00AC90079804A /* AnsweredQuestion.swift */,
+				8A8E587E25D540FF00CDE6F0 /* FirestoreCollections.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1A3211AA76FCC35FD6CCBB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2E10803258B7E6E0075AEF9 /* HealthKit.framework */,
+				28A8B9539BDB9EE0AF128EF1 /* Pods_Valeo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A8BC4032566AF0A00BABDD8 /* Valeo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A8BC4182566AF0D00BABDD8 /* Build configuration list for PBXNativeTarget "Valeo" */;
+			buildPhases = (
+				6686AF39453DA6667BF84DE4 /* [CP] Check Pods Manifest.lock */,
+				8A8BC4002566AF0A00BABDD8 /* Sources */,
+				8A8BC4012566AF0A00BABDD8 /* Frameworks */,
+				8A8BC4022566AF0A00BABDD8 /* Resources */,
+				1DBF4F42F7FB573DCE2B7835 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Valeo;
+			packageProductDependencies = (
+			);
+			productName = Valeo;
+			productReference = 8A8BC4042566AF0A00BABDD8 /* Valeo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A8BC3FC2566AF0900BABDD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8A8BC4032566AF0A00BABDD8 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 8A8BC3FF2566AF0A00BABDD8 /* Build configuration list for PBXProject "Valeo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A8BC3FB2566AF0900BABDD8;
+			packageReferences = (
+			);
+			productRefGroup = 8A8BC4052566AF0A00BABDD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A8BC4032566AF0A00BABDD8 /* Valeo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A8BC4022566AF0A00BABDD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A11122125F2AEE900C113F9 /* AlgoliaSDKLicense.rtf in Resources */,
+				8A8BC40F2566AF0D00BABDD8 /* Preview Assets.xcassets in Resources */,
+				8A3DD7A525F0136600E0BE88 /* GoogleService-Info.plist in Resources */,
+				8A3DD74525EFCA3900E0BE88 /* fullNutrientList.json in Resources */,
+				8ABCF89A25F3D1EA006544FC /* PrivacyPolicyGerman.rtf in Resources */,
+				8A8BC40C2566AF0D00BABDD8 /* Assets.xcassets in Resources */,
+				8A04E27225F4D458007036D1 /* LaunchScreen.storyboard in Resources */,
+				8A11121D25F2AA9400C113F9 /* FirebaseSDKLicense.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DBF4F42F7FB573DCE2B7835 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Valeo/Pods-Valeo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Valeo/Pods-Valeo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Valeo/Pods-Valeo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6686AF39453DA6667BF84DE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Valeo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A8BC4002566AF0A00BABDD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2587D7B2586878000DDC82D /* TrackerNavigation.swift in Sources */,
+				8A70138225AB03C1008C9A8E /* Sources.swift in Sources */,
+				8A58E0B625DACE03003543BE /* ConsumptionRepository.swift in Sources */,
+				8A87B0E225BB245100FF4B0E /* NutrientBase.swift in Sources */,
+				8A1560EE25C1CFC7005B37B3 /* Consumption.swift in Sources */,
+				8A6C0A3425D00AC90079804A /* AnsweredQuestion.swift in Sources */,
+				8A39F59B25C0809C00350141 /* HitsListController.swift in Sources */,
+				8A29792B25D6BAB5001B3AD5 /* AnamnesisViewModel.swift in Sources */,
+				8AFAF17925AA15B8006E7A27 /* MainSearchbarView.swift in Sources */,
+				B2890118256C0768009400F4 /* Food.swift in Sources */,
+				8A87B0E625BB2DDD00FF4B0E /* NutrientUploader.swift in Sources */,
+				B2587D4E2583E0C900DDC82D /* RingProgress.swift in Sources */,
+				8A1D1C0725B0664200FBD9FF /* OnBoardingNavigator.swift in Sources */,
+				8A29792425D68FC1001B3AD5 /* AuthenticationRepository.swift in Sources */,
+				8A29792725D69703001B3AD5 /* AuthenticationViewModel.swift in Sources */,
+				B2FDD94C258CF0760090969F /* Navigator.swift in Sources */,
+				8AB00D3125AB681E0064138C /* CustomStepper.swift in Sources */,
+				B2587D542584EB9500DDC82D /* DailyNutrientRow.swift in Sources */,
+				8A70137325AB036E008C9A8E /* AccountSettings.swift in Sources */,
+				B2587D5725850A3E00DDC82D /* MealSummary.swift in Sources */,
+				8A1D1C1325B06CF800FBD9FF /* BoardingWeight.swift in Sources */,
+				8A4B8D8125F6456C00943D6E /* SurveyLink.swift in Sources */,
+				8AB00D3425AB68940064138C /* SaveText.swift in Sources */,
+				8A29793125D82A1D001B3AD5 /* DaysummaryRepository.swift in Sources */,
+				B2E108002587D6900075AEF9 /* OffsetManager.swift in Sources */,
+				8A29792E25D6BAE5001B3AD5 /* AnamnesisRepository.swift in Sources */,
+				8A3DD7A125F00B5800E0BE88 /* QuestionView.swift in Sources */,
+				8ACB5B9025C1DB3B00C61450 /* NutrientView.swift in Sources */,
+				8AFB73AB25F93C01000E7BE7 /* DateSelector.swift in Sources */,
+				8A67185425CC072200DA5CAA /* MainAnamnesisView.swift in Sources */,
+				B2E10807258BBC480075AEF9 /* Activity.swift in Sources */,
+				B2587D512584E02200DDC82D /* BigIndicator.swift in Sources */,
+				B2FDD94F258CF5E60090969F /* MainNavigationView.swift in Sources */,
+				8AE1A57225AC695C005281A3 /* User.swift in Sources */,
+				B2587D452582567300DDC82D /* Anamnesis.swift in Sources */,
+				8A2BB3C025B2F6DE00AB1863 /* UserMutable.swift in Sources */,
+				8A98093C25DF111E00C2C40E /* ValeoMLModel.mlmodel in Sources */,
+				8AB7768725DAA6CF00DA6F34 /* DaysummaryViewModel.swift in Sources */,
+				8A05BB1025E923EC00464D3D /* MealCategoryMenuBar.swift in Sources */,
+				B2587D7F25868A6B00DDC82D /* MainUser.swift in Sources */,
+				8A8BC40A2566AF0A00BABDD8 /* ContentView.swift in Sources */,
+				8AFAF17425AA1523006E7A27 /* MainSettingsView.swift in Sources */,
+				8A1F2BCE25D2F06C0057275D /* LineChart.swift in Sources */,
+				8A763B4E25B1B57E00F2B2C3 /* Gender.swift in Sources */,
+				8A8E587F25D540FF00CDE6F0 /* FirestoreCollections.swift in Sources */,
+				8A70136D25AB034E008C9A8E /* PersonalData.swift in Sources */,
+				8ABCF8FE25F3E917006544FC /* APIKeys.swift in Sources */,
+				8AB7768A25DAA6DD00DA6F34 /* ConsumptionViewModel.swift in Sources */,
+				8A70137925AB0390008C9A8E /* TrackingSettings.swift in Sources */,
+				8AB00D2E25AB67ED0064138C /* NumberStepper.swift in Sources */,
+				8A05BB0925E85DB700464D3D /* AuthenticationCurve.swift in Sources */,
+				8A1D1C0A25B06C9A00FBD9FF /* BoardingName.swift in Sources */,
+				8A9D6E6825B06EA70022B18F /* BoardingWaistAndBodyfat.swift in Sources */,
+				8A3DD74225EEA5AB00E0BE88 /* IntroductionSubView.swift in Sources */,
+				8A05BB0D25E8ECE100464D3D /* ColorTestView.swift in Sources */,
+				8A1F2BDC25D53F780057275D /* UserRepository.swift in Sources */,
+				8AFB73A825F935AE000E7BE7 /* NumbersOnly.swift in Sources */,
+				8A1D1C1625B06D0900FBD9FF /* BoardingSize.swift in Sources */,
+				8ACB5B9325C31AE400C61450 /* DaySummary.swift in Sources */,
+				B2587D3C25824E6200DDC82D /* MainTracker.swift in Sources */,
+				8ABCF90225F3EDAB006544FC /* AcceptPrivacyPolicy.swift in Sources */,
+				8A70137625AB0380008C9A8E /* NotificationSettings.swift in Sources */,
+				8A67184825CBF08200DA5CAA /* Question.swift in Sources */,
+				B2587D782586662E00DDC82D /* NutrientCell.swift in Sources */,
+				8A1D1C1025B06CE300FBD9FF /* BoardingGender.swift in Sources */,
+				8A3DD73F25EE7F7E00E0BE88 /* IntroductionViewManager.swift in Sources */,
+				8A05BB0025E85CAD00464D3D /* LoginTabView.swift in Sources */,
+				8A70137025AB0359008C9A8E /* DiarySettings.swift in Sources */,
+				8A87B0DD25B8221500FF4B0E /* LoginAndSignupView.swift in Sources */,
+				8A05BB0325E85CF700464D3D /* SignupTabView.swift in Sources */,
+				8A70137F25AB03B5008C9A8E /* Licences.swift in Sources */,
+				8A39F59F25C087EB00350141 /* MealType.swift in Sources */,
+				8A05BB0625E85D9100464D3D /* LoginAndSignupTabBar.swift in Sources */,
+				8AFAF17D25AA184F006E7A27 /* Settings.swift in Sources */,
+				8A70138525AB03CD008C9A8E /* InviteFriends.swift in Sources */,
+				8A1D1C0D25B06CC200FBD9FF /* BoardingBirthday.swift in Sources */,
+				8A1F2BD625D44EA70057275D /* UserView.swift in Sources */,
+				8A29791D25D5534A001B3AD5 /* UserViewModel.swift in Sources */,
+				8A8BC4082566AF0A00BABDD8 /* ValeoApp.swift in Sources */,
+				8A70137C25AB03A7008C9A8E /* AGB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A8BC4162566AF0D00BABDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A8BC4172566AF0D00BABDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A8BC4192566AF0D00BABDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9165B7E19EBF374D31980679 /* Pods-Valeo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Valeo/Valeo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"Valeo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Valeo/Template/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A8BC41A2566AF0D00BABDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A592ADA3A904FFF7440A4110 /* Pods-Valeo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Valeo/Valeo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"Valeo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Valeo/Template/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A8BC3FF2566AF0A00BABDD8 /* Build configuration list for PBXProject "Valeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8BC4162566AF0D00BABDD8 /* Debug */,
+				8A8BC4172566AF0D00BABDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A8BC4182566AF0D00BABDD8 /* Build configuration list for PBXNativeTarget "Valeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8BC4192566AF0D00BABDD8 /* Debug */,
+				8A8BC41A2566AF0D00BABDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A8BC3FC2566AF0900BABDD8 /* Project object */;
+}
